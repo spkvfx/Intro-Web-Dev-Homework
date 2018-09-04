@@ -1,6 +1,6 @@
-#My Intro-Web-Dev Homework Rep
+# My Intro-Web-Dev Homework Rep
 
-##Shawn Kearney
+## Shawn Kearney
 
 I took this class for really no other reason than to fulfill Symbolic Systems general education. I do not think I would have taken it if I had the choice. Though I suppose this is the entire point of general education requirements.
 
