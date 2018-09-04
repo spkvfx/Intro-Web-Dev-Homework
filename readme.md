@@ -34,4 +34,4 @@ I took this class for really no other reason than to fulfill Symbolic Systems ge
 
 * A picture of a cat eating noodles:
 
-    [cat eating spaghetti]:(https://pbs.twimg.com/media/BkbLDJHCEAAweGJ.jpg)
+    ![cat eating spaghetti](https://pbs.twimg.com/media/BkbLDJHCEAAweGJ.jpg)
