@@ -24,7 +24,7 @@ I took this class for really no other reason than to fulfill Symbolic Systems ge
 
 * Texbook:
 
-    __Duckett, J.__ _HTML & CSS_: Design and build websites. Indianapolis, IN: Wiley.
+    __Duckett, J.__ _HTML & CSS: Design and build websites_. Indianapolis, IN: Wiley.
 
 * This is a code block
 
