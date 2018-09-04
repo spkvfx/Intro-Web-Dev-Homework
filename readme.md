@@ -20,3 +20,18 @@ I took this class for really no other reason than to fulfill Symbolic Systems ge
     
 ***
 
+### My Resources
+
+* Texbook:
+
+    __Duckett, J.__ _HTML & CSS_: Design and build websites. Indianapolis, IN: Wiley.
+
+* This is a code block
+
+    `` __Duckett, J.__ _HTML & CSS_: Design and build websites. Indianapolis, IN: Wiley.``
+
+* [This is a link to the class website](ttps://media-ed-online.github.io/intro-web-dev/)
+
+* A picture of a cat eating noodles:
+
+    [cat eating spaghetti]:(https://pbs.twimg.com/media/BkbLDJHCEAAweGJ.jpg)
