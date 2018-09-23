@@ -1,0 +1,11 @@
+1) Digital communication is accomplished by modulating electromagnetic energy, either through traditional electrical wires, fiber-optic cable, or by radio. By establishing a given threshold, a computer may interprit two distinct states of binary code as represented by voltage, amplitude or frequency.
+
+This communication may be direct, such as in two-way communication between devices, or indirect across multiple networks forming a larger fault-tolerant network - known as an "internet".
+
+2) Each machine capable of communicating directly with any other machine on a network has a unique IP address. On networks that use TCP/IP, including the internet, a Domain Name System uses to direct traffic. A DNS server contains a collection of websites and their server's associated IP addresses. If the DNS server cannot resolve the URL, it will look ask other DNS servers for more information about who might, until finally a connection can be established.
+
+3) Cookies are small documents that are sent from a website to the user's computer and are saved locally by the web browser (wikipedia:HTTP Cookie). They can be thought of like a preferences file for websites, saving information specific to the users, such as shopping carts, entered information and what a user had done in the past. This information is supplied to the webserver so that content can be modified in a way that is useful to either the user experience or to provide analytics about how the website is being interacted.
+
+Cookies may also be used to identify users and whether or not a specific user is active or not, and even to disclose the user's browser history in order to track their activities.
+
+4) protocol://domain/path
