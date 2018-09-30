@@ -1,7 +1,7 @@
 # Technical Report
 ## Shawn Kearney
 
-### We Browser Familiarity
+### Web Browser Familiarity
 I use the following web browsers on CentOS
 * Firefox 60.2
 * Vivaldi (chromium)
