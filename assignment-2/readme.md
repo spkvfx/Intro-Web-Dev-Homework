@@ -16,4 +16,4 @@ This week went pretty smoothly. I did not encounter any problems. I don't think 
 
 ### Screenshot
 
-![cat eating spaghetti](img/screenshot.png)
+![screenshot](img/screenshot.png)
