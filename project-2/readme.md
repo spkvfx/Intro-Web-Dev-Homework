@@ -9,7 +9,7 @@ I was a bit late starting this project primarily due to some personal complicati
 
 Overall, the experience feels messy. I don't like HTML mostly because it's so flexible it becomes extremely easy to write bad code - and I really feel like this project is pretty bad, but I am not sure how to better organize things. I think using CSS more will help me stay organized. 
 
-I think i really prefer the struct structure of programming languages.
+I think i really prefer the forced structure of programming languages.
 ### Screenshot
 
 ![screenshot](images/screenshot.png)
