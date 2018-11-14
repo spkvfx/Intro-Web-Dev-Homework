@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Installing AMD OpenCL on CentOS 7.5">
+    <meta name="author" content="Shawn Kearney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing AMD OpenCL on CentOS 7.5</title>
+
+    <style>
+        body {
+            background-color: darkslategrey;
+            text-align: left;
+        }
+        .container {
+            background-color: white;
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .codesnip {
+            background-color: dimgray;
+            width: 100%;
+
+            padding: 1px;
+            text-align: left;
+            color: aquamarine;
+        }
+        .textsnip {
+            background-color: lightgrey;
+            width: 100%;
+
+            padding: 1px;
+            text-align: left;
+            color: black;
+        }
+        .example {
+            text-align: center;
+        }
+        .headers {
+            width: 85%;
+            text-align: center;
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div id = "title" class = "container headers">
+            <h1>Installing opencl_amd_pro</h1>
+            <h3>on CentOS 7.5</h3>
+        </div>
+
+        <div id = "Introduction" class = "container">
+            <div style="text-align: center;"><h2>Introduction</h2></div>
+            This instruction page will provide information about how to install AMD Pro OpenCL drivers for AMD Professional Graphics Cards, without any graphic support and allows your AMD GPU to function as a strict OpenCL device for computation only.
+            <h3>Prerequisits</h3>
+            <li>An AMD Professional GPU</li>
+            <li>CentOS 7.5</li>
+            <h3>Motivation</h3>
+            The AMD Pro Drivers come with an installation script that would appear to install only the required drivers to run OpenCL. However, recently the script also installs a number of other drivers, also, including X11 drivers and MESA OpenGL drivers that are not essential to the OpenCL Platform. This may cause complications if these components either conflict with other devices (i.e., a non-AMD display device) or if the display drivers are otherwise not desired.
+            <h3>Alternative Solution</h3>
+            The ROCm framework is another solution that may have the same benefit. However, in my experience ROCm's OpenCL implementation was for whatever reason incompatible with Houdini FLIP fluids. You can learn more about ROCm <a href="https://github.com/RadeonOpenCompute/ROCm">here</a>.
+        </div>
+
+        <div id = "Step 1" class = container>
+            <h2>Step 1</h2>
+            <div style="text-align: center;"><h3>Download the Radeon Pro Software</h3></div>
+            <P>
+                After updating or upgrading your distro and packages, you will need to download the latest AMD Pro Driver package for CentOS 7.5, which can be found here:
+            </P>
+            <div id = "URL to AMD Website" class = "example">
+                <a href="https://www.amd.com/en/support">AMD Drivers and Support</a>
+            </div>
+            <P>
+                From the list, select "Professional Graphics" and choose your product. I've noticed that some products must be found using <i>Search For Your Product</i>. Please be aware though that your GPU must be compatible with the professional drivers.
+            </P>
+            <div id = "Image of AMD Website" class = "example">
+                <img src="images/download_page.png">
+            </div>
+            <P>
+                After submitting the form, choose the <i>Linux x86_64</i> platform, and download <i>Radeon Pro Software for Enterprise on RHEL 7.5/CentOS 7.5</i> distro.
+            </P>
+            <div id = "Image of Download Page" class = "example">
+                <img src="images/drivers.png">
+            </div>
+        </div>
+
+        <div id = "Step 2" class = container>
+            <h2>Step 2</h2>
+            <div style="text-align: center;"><h3>Untar the Archive</h3></div>
+            <P>
+                Once downloaded, untar the file in place. You will need to relocate it with a new name later. In this example, the archive was saved in the Downloads directory:
+            </P>
+            <div id = "sh code for untarring archive" class = "codesnip">
+                <code>$ tar -xvf ~/Downloads/amdgpu-pro-18.20-621984.tar.xz</code>
+            </div>
+        </div>
+
+        <div id = "Step 3" class = container>
+            <h2>Step 3</h2>
+            <div style="text-align: center;"><h3>Install the Repository</h3></div>
+            <P>
+                At this point you would normally run the installation script. However, to use the GPU as an OpenCL device, you will need to do a custom installation using Yum instead.
+            </P>
+            <P>
+                To do this, we'll be bypassing the installer script and enable the repository manually. To begin, we'll need to rename the repository to the location the script would by hand.
+            </P>
+
+            <div id = "sh code for untarring archive" class = "codesnip">
+                <code>$ sudo mv ~/Downloads/amdgpu-pro-18.20-621984 /var/opt/amdgpu-pro-local</code>
+            </div>
+
+            <P>
+                Next we need to enable the repository in yum. You'll need to create the following .repo file using gedit (or some other text editor):
+            </P>
+
+            <div id = "sh code for moving repository" class = "codesnip">
+                <code>$ sudo gedit /etc/yum.repos.d/amdgpu-pro-local.repo</code>
+            </div>
+
+            <P>
+                Now copy the following text into the document and save
+            </P>
+
+            <div id = "repo file" class = "textsnip">
+                <code>
+                    [amdgpu-pro-local]<br>
+                    Name=AMD amdgpu Pro local repository<br>
+                    baseurl=file:///var/opt/amdgpu-pro-local<br>
+                    enabled=1<br>
+                    gpgcheck=0
+                </code>
+            </div>
+        </div>
+
+        <div id = "Step 4" class = container>
+            <h2>Step 4</h2>
+            <div style="text-align: center;"><h3>Install the OpenCL Drivers</h3></div>
+            <P>
+                Provided that the local repository has been properly installed and enabled, you can now easily install opencl-amdgpu-pro. I think the easiest way to do this is simply to install all opencl-amdgpu-pro packages available. This will install a number of packages, but will not install any display-related or OpenGL drivers. If you see anything about X11, Mesa, OpenGL or Vulcam, then this installation will not be OpenCL-only.
+            </P>
+
+            <div id = "sh moving repository" class = "codesnip">
+                <code>$ sudo yum install opencl-amd*</code>
+            </div>
+
+            <P>
+                Confirm that installation is appropriate and proceed. Once you restart, you can use <code>clinfo</code> to confirm the installation.
+            </P>
+        </div>
+
+        <div id = "navigation" class = "container headers">
+            <nav>
+                <P>
+                    <a href="pages/about.html">
+                        About</a>
+                </P>
+
+                <P>
+                    <a href="pages/contact.html">
+                        Contact Info</a>
+                </P>
+            </nav>
+        </div>
+    </div>
+</body>

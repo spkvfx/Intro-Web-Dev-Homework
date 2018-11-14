@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Installing AMD OpenCL on CentOS 7.5 - About">
+    <meta name="author" content="Shawn Kearney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            background-color: darkslategrey;
+            text-align: left;
+        }
+        .container {
+            background-color: white;
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .headers {
+            width: 85%;
+            text-align: center;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id = "title" class = "container headers">
+        <h1>About This Page</h1>
+    </div>
+    <div id = "about me" class = container>
+        <div style="text-align: center;"><h3>About Shawn Kearney</h3></div>
+        <P>
+            I am a senior BFA candidate and MFA applicant at The University of Montana's School of Media Arts. I specialize in VFX Technical Direction and Pipeline Development. I have approximately four year's experience using the CentOS operating system.
+        </P>
+        <P>
+            In addition, I also have worked on a number of popular cable television programs with <a href="https://www.imdb.com/name/nm2699493/">credits</a> on HGTV, Discovery Channel and Fox News Network.
+        </P>
+    </div>
+    <div id = "why I chose this topic" class = container>
+        <div style="text-align: center;"><h3>Why I chose this tutorial</h3></div>
+        <P>
+            I needed a way to install an AMD Vega FE card along side my Nvidia M4000 in my personal workstation and found that the supplied script would not work since it was installing several X11 components that conflicted, even with the <code>--headless</code> argument provided. I wanted to use the card as an OpenCL Device only, without any display capabilities. There is very little information on this subject, so I wanted to share how I eventually accomplished this unique setup.
+        </P>
+        <P>
+            In addition to using an AMD card along-side a Nvidia card, other circumstances might benefit from this setup, including headless compute servers that might want to minimize complications arising from the additional bloat that the install script provides.
+        </P>
+        <P>
+            As far as I know there is no further information on this specific topic.
+        </P>
+    </div>
+    <div id = "navigation" class = "container headers">
+        <nav>
+            <P>
+                <a href="../index.html">
+                    Tutorial</a>
+            </P>
+
+            <P>
+                <a href="contact.html">
+                    Contact Info</a>
+            </P>
+        </nav>
+    </div>
+</div>
