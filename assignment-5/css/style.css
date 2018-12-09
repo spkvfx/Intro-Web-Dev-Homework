@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+
+}
+
+
+div {
+    text-align: center;
+    font-size: 50px;
+    font-family: sans;
+    font-weight: bold ;
+}
+
+div.container {
+    background-image: url("../img/1980s-03.png");
+    margin: auto;
+    padding: 100px;
+    color: aqua;
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            2px 5px 0 #000;
+
+
+}
+
+div.header {
+    background-color: yellow;
+}
+
+div.body {
+    background-color: fuchsia;
+    font-style: oblique;
+
+}
+
+div.footer {
+    background-color: mediumseagreen;
+}
