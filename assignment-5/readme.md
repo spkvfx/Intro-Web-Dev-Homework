@@ -15,4 +15,4 @@ I noticed that I missed the text color instruction, and looked up how to add an 
 
 ### Screenshot
 
-![screenshot](img/capture.png)
+![screenshot](img/screenshot.png)
