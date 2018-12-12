@@ -1,0 +1,48 @@
+
+
+
+.artwork {
+    background-color:       white;
+    background-size:        contain;
+    margin:                 auto;
+    width:                  40vw;
+}
+
+.text {
+    height:             40vw;
+    margin:             0;
+    font:               bolder 12vw 'Alfa Slab One';
+    background-color:   rgba(59, 2, 6, 1);
+    mask-type:          luminance;
+    mask:               url("#m");
+}
+
+.title {
+    background-size:        contain;
+    margin:                 auto;
+    width:                  40vw;
+    background: transparent ;
+}
+
+.title_emphasis {
+    text-align: right;
+    position: relative;
+    top : -16vw ;
+}
+
+.body {
+    margin:                 auto;
+    margin-top: -15vw ;
+    width:                  60vw;
+}
+
+svg{
+    width:     40vw;
+    height:    40vw;
+}
+
+.error{
+    text-align: center;
+    font:  12pt monospace;
+    color: red;
+}

@@ -1,0 +1,56 @@
+
+text{
+    font:       bolder 40vw 'Arial', sans-serif;
+}
+
+.title {
+    font:       bolder 5vw 'Arial', sans-serif;
+}
+
+.title em {
+    font:       bolder 10vw 'Times', serif;
+    font-style: italic;
+}
+
+.moreInfo {
+    font:       bolder 2vw 'Arial', sans-serif;
+    text-indent: 5vw;
+}
+
+.body {
+    font:       normal 2vw 'Times', serif;
+    line-height: 1.7em;
+}
+
+.body_title {
+    text-align: justify;
+}
+
+.body_text{
+    margin-left: 5vw;
+
+    font-size: 1.75vw;
+    text-indent: 5vw;
+
+    text-align: justify;
+}
+
+.body_title:first-line{
+    font:       bolder 2vw 'Arial', sans-serif;
+    font-style: italic;
+}
+
+a:link {
+    font:       bolder 2vw 'Arial', sans-serif;
+    font-style: italic;
+    color: rgba(59, 2, 6, 1)
+}
+
+a:active {
+    color: dimgrey;
+}
+
+a:active {
+    color: rgba(59,30, 40, 1);
+    font-style: normal ;
+}
