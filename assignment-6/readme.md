@@ -2,7 +2,7 @@
 ## Shawn Kearney
 
 ### Discussion
-I've overlooked step 1. And frankly, none really interest me enough to go back through and redesign the entire submission. I am happy with what I have produced here and stand by it, even if I am deducted points. Otherwise I believe all other criteria has been met.
+I've overlooked step 1. However, I am happy with what I have produced here and. Otherwise I believe most other criteria has been met, and so I hope that my final grade will not be adversely affected.
 
 I chose a Modern and minimal type style to match the word "the". For the artwork, I had something else in mind (and is why I am using masking) but I ended up really liking what it was doing conceptually for such an "ubiquitous and unassuming" word. I did not have time to go back through and change teh svg code, though I do not think it would be terribly problematic either.
 
