@@ -1,7 +1,7 @@
 .menu_container {
 
     position:               absolute;
-    top:                    100px;
+    top:                    35px;
     left:                   5vw;
     width:                  95%;
     height:                 335px;
@@ -36,7 +36,7 @@
     height:             100%;
     width:              100%;
     mask:               url("#m");
-    background-color : white
+    background-color : white ;
 }
 
 .items_container {
@@ -45,7 +45,6 @@
     left:               0;
     width:              100%;
     height:             100%;
-    min-width:      1190px;
 }
 
 .tag {
@@ -59,15 +58,15 @@
     letter-spacing: 0.13px;
 }
 
-.contact{
-    position:           relative;
-    top:                115px;
-    left:               90%;
-    width:              0;
-    height:             20px;
-    text-align: right;
-    line-height: 0.4;
-    letter-spacing: 0.13px;
+.menu_items{
+    position:absolute;
+    top:                    0;
+    left:                  450px;
+    height:             100%;
+    width:              45%;
+    min-width:490px;
+    max-width:1500px;
+
 }
 
 svg{

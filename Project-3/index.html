@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="./css/dropdown.css">
         <link rel="stylesheet" type="text/css" href="./css/button.css">
         <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,900,900i' rel='stylesheet'>
+
+        <script src="./js/jquery-3.3.1.min.js"></script>
 
         <script src="./js/p5_lib/p5.min.js"></script>
         <script src="./js/p5_lib/p5.dom.min.js"></script>
@@ -18,22 +21,23 @@
         <script src="./js/my_libs/xid.js"></script>
         <script src="./js/my_libs/xPoint.js"></script>
         <script src="./js/my_libs/Phxyz.js"></script>
+        <script src="./js/vimeo.js"></script>
 
         <script src="./js/sketch.js"></script>
-
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,900,900i');
-        </style>
 
         <title>The History of The</title>
     </head>
 
     <body>
 
+    <script>
+
+    </script>
+
     <div class='menu_container'>
             <div class = "matte">
                 <div class='artwork' id = "p5">
-                        <div class='logo'>
+                        <div class='logo' id = "masked">
                             <svg>
                                 <defs>
                                     <mask  id="m" >
@@ -44,50 +48,240 @@
                                         <text x=86px y=310px class = 'vfx'>
                                             VFX
                                         </text>
-                                        <line x1="233" y1="179" x2=120% y2="179" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+                                        <line x1="233" y1="179" x2=120% y2="179" style="stroke:rgb(0,0,0);stroke-width:2"></line
                                     </mask >
                                 </defs>
                             </svg>
                         </div>
                 </div>
             </div>
+
             <div class = 'items_container'>
                 <div class = 'tag'>
                     <p class="items">shawn kearney - visual effects and pipeline td</p>
                 </div>
-            <div class="dropdown" style = "position: relative;left:820px;top: 144px">
-                <button class="dropbtn">Intro to Web Design</button>
-                <div class="dropdown-content">
-                    <a href="#">This Menu as a List</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
 
-                <div class="dropdown" style = "position: relative;left:500px;top: 144px">
-                    <button class="dropbtn">Creative Coding I</button>
+                <div class = "menu_items">
+                <div class="dropdown" style = "position: absolute;left:72%;
+                %;top: 180px">
+                    <button class="dropbtn">MART 341</button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <ul>
+
+                            <li>
+                                <a href="https://github.com/spkvfx/web-dev-hw/blob/master/readme.md">A1</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/spkvfx/web-dev-hw/blob/master/assignment-2/readme.md">A2</a>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/assignment-3/index.html">A3</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/assignment-3">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/assignment-4/index.html">A4</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/assignment-4">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/assignment-5/index.html">A5</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/assignment-5">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/assignment-6/index.html">A6</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/assignment-6">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://github.com/spkvfx/web-dev-hw/blob/master/project-1/readme.md">Project 1</a>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/project-2/index.html">Project 2</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/project-2">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/web-dev-hw/project-3/index.html">Project 3</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/web-dev-hw/tree/master/project-3">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
                     </div>
-            </div>
-
-            <div class="dropdown" style = "position: relative;left:220px;top: 144px">
-                <button class="dropbtn">Demo Reels</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
                 </div>
+
+                <div class="dropdown" style = "position: absolute;left:50%;top: 180px">
+                    <button class="dropbtn">MART 120</button>
+                    <div class="dropdown-content">
+                        <ul>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-4/">A4 Drawing</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-4">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-5/">A5 Animation</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-5">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-6/">A6 Generative</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-6">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-7/">A7 Conditions</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-7">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-8/">A8 Functions</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-8">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-10/">A10 Loops (slow)</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-10">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-11/">A11 Classes</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-11">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/hw-12/">A12 Dependency</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/hw-12">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://spkvfx.github.io/creative_coding-work/120-work/final/">Final</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/spkvfx/creative_coding-work/tree/master/120-work/final">repo</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    </div>
+
+                <div class="dropdown" style = "position: absolute;left:22%;top: 180px">
+                    <button class="dropbtn">Code Samples</button>
+                    <div class="dropdown-content">
+
+                        <ul>
+                            <li>
+                                <a href="./assets/assGUI.zip">assGUI<br>(NDA Protected)</a>
+                            </li>
+                            <li>
+                                <a href="./assets/NiceNoice.zip">NiceNoice<br>(NDA Protected)</a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:spk.vfx@gmail.com?Subject=Password%20Request">Request Access</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="dropdown" style = "position: absolute;left:0;top: 180px">
+                    <button class="dropbtn">Demo Reels</button>
+
+                    <div class="dropdown-images">
+                            <a href="http://player.vimeo.com/video/167801582?autoplay=1 ">
+                                <img class="faded-images" id="vimeo-167801582" src="" alt="General Reel" />
+                            </a>
+
+                        <script type="text/javascript">
+                            vimeoLoadingThumb(167801582);
+                        </script>
+
+                        <a href="http://player.vimeo.com/video/195076772?autoplay=1 ">
+                            <img class="faded-images" id="vimeo-195076772" src="" alt="TD Reel" />
+                        </a>
+                        <script type="text/javascript">
+                            vimeoLoadingThumb(195076772);
+                        </script>
+
+                        <a href="http://player.vimeo.com/video/273796599?autoplay=1 ">
+                            <img class="faded-images" id="vimeo-273796599" src="" alt="Legends and Lies" />
+                        </a>
+                        <script type="text/javascript">
+                            vimeoLoadingThumb(273796599);
+                        </script>
+
+                        <a href="http://player.vimeo.com/video/279360206?autoplay=1 ">
+                            <img class="faded-images" id="vimeo-279360206" src="" alt="Stay or Sell" />
+                        </a>
+                        <script type="text/javascript">
+                            vimeoLoadingThumb(279360206);
+                        </script>
+
+
+                        <a href="https://vimeo.com/album/5220271">More on Vimeo...</a>
+                    </div>
+
+                </div>
+
+                     <a href="mailto:spk.vfx@gmail.com" target="_top">
+                         <button class="button" style = "position: absolute;left: 100%;top: 180px">
+                           spk.vfx@gmail.com
+                        </button>
+                     </a>
+
             </div>
 
-            <button class="button" style = "position: relative;left:60%;top: 144px">
-                <a href="#">spk.vfx@gmail.com</a>
-            </button>
+            </div>
+    </div>
 
-        </div>
-        </div>
     </body>
 
 </html>
