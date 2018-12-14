@@ -1,0 +1,22 @@
+.initials{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 192px ;
+    font-weight: 900 ;
+}
+
+.vfx{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 200px ;
+    font-weight: 900 ;
+    font-style: oblique;
+}
+
+.items{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+span.spacer {
+    display: inline-block;
+    width: 15%
+}

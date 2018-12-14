@@ -1,6 +1,4 @@
 
-
-
 .artwork {
     background-color:       white;
     background-size:        contain;
@@ -8,7 +6,7 @@
     width:                  40vw;
 }
 
-.text {
+.logo {
     height:             40vw;
     margin:             0;
     font:               bolder 12vw 'Alfa Slab One';
