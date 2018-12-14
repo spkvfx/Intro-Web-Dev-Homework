@@ -6,6 +6,15 @@
     width:                  40vw;
 }
 
+.text {
+    height:             40vw;
+    margin:             0;
+    font:               bolder 12vw 'Alfa Slab One';
+    background-color:   rgba(59, 2, 6, 1);
+    mask-type:          luminance;
+    mask:               url("#m");
+}
+
 .logo {
     height:             40vw;
     margin:             0;
