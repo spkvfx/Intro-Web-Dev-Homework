@@ -1,7 +1,7 @@
 //taken from https://stackoverflow.com/questions/1361149/get-img-thumbnails-from-vimeo
 
 function vimeoLoadingThumb(id){
-    var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumb";
+    var url = "https://vimeo.com/api/v2/video/" + id + ".json?callback=showThumb";
 
     var id_img = "#vimeo-" + id;
 
