@@ -1,29 +1,22 @@
 # Technical Report
 ## Shawn Kearney
 
+IMPORTANT: This project must be viewed in Firefox. I need to work on a Chromium and Safari compatable version some other time.
+
 ### Discussion
-I've overlooked step 1. However, I am happy with what I have produced here and. Otherwise I believe most other criteria has been met, and so I hope that my final grade will not be adversely affected.
+Padding, margins and boarders are each unique formatting options that surround content.
 
-I chose a Modern and minimal type style to match the word "the". For the artwork, I had something else in mind (and is why I am using masking) but I ended up really liking what it was doing conceptually for such an "ubiquitous and unassuming" word. I did not have time to go back through and change teh svg code, though I do not think it would be terribly problematic either.
-
-The fonts I chose were simply 'Arial' and 'Times New Roman". I chose these fonts for simplicity. Again to match the overall concept.
-
-I wanted to try approaching this website as I would print (which I am more comfortable with). Hopefully it renders well on other systems.
-
-I still do not feel I have a good command over CSS.
+Padding is the space between the content and the exterior border while the margin is the space outside and beyond the border. The border itself forms this boundary.
 
 ### Summary
-I came up with the concept of the website long before I started, and in my enthusiasm I must have missed the first instruction. Initially I wanted the artowrk to to be a T that masked out the word "THE", but after a bit of a struggle to get the css masking to work, the plain white letter over the maroon field was more impactful. I then tried the whole word, and when I found that it clipped off the edge like this I felt it was fitting.
+What was the hardest part about this project? Everything. It was an enormous challenge for me and I had many issues getting everything to work correctly. I went into the project still not being very confident with CSS, though now I feel much more capable - although I am not by any means a web programmer.
 
-I then just shifted the letters down some to stress the concept of an "invisible" word further.
+It wasn't so much that it was difficult, just very fiddly and annoying. I;m sure there are many things I am doing wrong that would make my life a lot easier.
 
-I then started on the title text using `<div>` as I would text boxes, and addressed the position of the word "the" using relative position.
+I am having trouble thinking of any one thing I had significant problems. The buttons went pretty smoothly, but other than that it was more or less forty-eight hours of continuous hell.
 
-The body is split into two styles, one for the intro and the other for the bulk text. The intro is larger and centered beneath the artwork, while the body text is offset slightly on the left margin using `padding-right` in order to define a visual hierarchy to the layout: with the eye reading left to right having empty space in this margin pushes the eye into this text block.
+I absolutely hate HTML.
 
-I then added style to the "read more" section and used this as an endcap by embolding it, and added a link to a wikipedia article.
-
-I thought I understood how to use semantic structure, though my attempt threw several errors and so I ended up removing all `alt` properties.
 ### Screenshot
 
 ![screenshot](img/screenshot.png)
