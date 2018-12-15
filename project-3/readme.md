@@ -15,7 +15,7 @@ It wasn't so much that it was difficult, just very fiddly and annoying. I;m sure
 
 I am having trouble thinking of any one thing I had significant problems. The buttons went pretty smoothly, but other than that it was more or less forty-eight hours of continuous hell.
 
-I absolutely hate HTML; though regardless of this I feel I do have something I can be proud of, and finally a webpage to submit for my graduate school application: provided that it renders properly and reliably. 
+I absolutely hate HTML; though regardless of this I feel I do have something I can be proud of, and finally a webpage to submit for my graduate school application, provided that it renders properly and reliably. 
 
 ### Screenshot
 
